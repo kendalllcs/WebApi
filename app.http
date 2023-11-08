@@ -1,0 +1,29 @@
+@WebApiHost = https://localhost:7001
+
+@Token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2wiOlsiQWRtaW4iXSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJuYmYiOjE2OTk0MTIzNDcsImV4cCI6MjU2MzMyNTk0NywiaWF0IjoxNjk5NDEyMzQ3LCJpc3MiOiJodHRwOi8vd3d3LmVjdS5lZHUiLCJhdWQiOiJodHRwOi8vd3d3LmVjdS5lZHUifQ.U7170Ut0WZLpMe8c7OKYTja2LdoDkl06Xqpu3CJq4dA
+ 
+
+POST {{WebApiHost}}/api/token/authenticate
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+###
+
+GET https://localhost:7001/api/ingredients
+
+###
+
+POST https://localhost:7001/api/ingredients
+Content-Type: application/json
+
+{
+
+      "IngredientName":"Cheese"
+}
+
+###
+
